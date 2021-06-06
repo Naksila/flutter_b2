@@ -1,9 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_b/screens/Login/HomeLoginPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:http/http.dart' as http;
 
 class Header extends StatefulWidget {
   @override
@@ -56,8 +54,7 @@ class _HeaderState extends State<Header> {
                     ],
                     image: DecorationImage(
                         fit: BoxFit.cover,
-                        image:
-                            NetworkImage('http://172.20.10.7/db/${im}.jpg')),
+                        image: NetworkImage('http://172.20.10.7/db/${im}.jpg')),
                     //AssetImage('assets/images/profile_pic.jpg')),
                   ),
                 ),
